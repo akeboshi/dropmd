@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+body {
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: inline;
+    padding: 20px 10px;
+    font-size: 2em;
+}
+
+input[type="submit"] {
+    margin: 10px 0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    background: white;
+    min-width: 300px;
+    max-width: 90%;
+}
+
+#header {
+}
+
+#subtitle {
+    display: inline;
+    font-size: 1.3em;
+    padding-left: 10px;
+}
+
+#navigation ul {
+    float: right;
+    margin: 10px 20px 0 0;
+    padding: 0;
+}
+
+#navigation li {
+    display: inline;
+    padding: 10px;
+}
+
+#content {
+    padding: 20px 20px;
+}
+
+#editor_pane {
+    width: 100%;
+    overflow: hidden;
+}
+
+#editor {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+    resize: none;
+    overflow: hidden;
+    vertical-align: top;
+    background: whitesmoke;
+}
+
+#preview {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    min-height: 300px;
+    vertical-align: top;
+    background: whitesmoke;
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* IE */
+}
+
+#list {
+    clear: both;
+    width: 100%;
+}
+
+#list tr {
+    line-height: 20px;
+}
+
+#list tr:nth-child(2n+1) {
+    background-color: whitesmoke;
+}
+
+#list th {
+    background-color: silver;
+}
+
+#list td {
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 10px;
+}
+
+#footer {
+}
+
+#copyright {
+    text-align: center;
+}

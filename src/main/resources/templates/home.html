@@ -4,7 +4,14 @@
     <meta charset="UTF-8"/>
     <meta name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" type="text/css" media="all" th:href="@{/style/main.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../../webapp/css/normalize.css" th:href="@{/css/normalize.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../../webapp/css/default.css" th:href="@{/css/default.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../../webapp/css/jquery-ui.min.css" th:href="@{/css/jquery-ui.min.css}"/>
+    <script type="text/javascript" src="../../webapp/js/jquery-1.11.1.min.js" th:src="@{/js/jquery-1.11.1.min.js}"></script>
+    <script type="text/javascript" src="../../webapp/js/jquery-ui.min.js" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" src="../../webapp/js/autosize.min.js" th:src="@{/js/autosize.min.js}"></script>
+    <script type="text/javascript" src="../../webapp/js/marked.min.js" th:src="@{/js/marked.min.js}"></script>
+    <script type="text/javascript" src="../../webapp/js/dropmd-ui.js" th:src="@{/js/dropmd-ui.js}"></script>
     <title>dropmd</title>
 </head>
 <body>
@@ -12,7 +19,14 @@
     <div th:include="common/navigation :: navigation"></div>
     <div th:include="common/header :: header"></div>
     <div id="content">
-        <table id="list">
+        <form action="new" method="post">
+        <div id="editor_pane">
+            <textarea id="editor" name="editor"></textarea>
+            <div id="preview" class="markdown"><h1>Preview Area</h1></div>
+        </div>
+            <input type="submit" value="Save" />
+        </form>
+        <table id="list" th:if="${login}">
             <tr><th th:text="#{list.subject}">Subject</th><th th:text="#{list.date}">Date</th><th th:text="#{list.share}">Share</th></tr>
             <tr><td>No entry</td><td>--</td><td>--</td></tr>
         </table>
