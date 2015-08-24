@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/style/main.css}"/>
+    <title>dropmd</title>
+</head>
+<body>
+<div id="wrapper">
+    <div th:include="common/navigation :: navigation"></div>
+    <div th:include="common/header :: header"></div>
+    <div id="content">
+        <table id="list">
+            <tr><th th:text="#{list.subject}">Subject</th><th th:text="#{list.date}">Date</th><th th:text="#{list.share}">Share</th></tr>
+            <tr><td>No entry</td><td>--</td><td>--</td></tr>
+        </table>
+    </div>
+
+    <div th:include="common/footer :: footer"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<footer th:fragment="navigation">
+    <div id="navigation">
+        <ul>
+            <li th:unless="${login}" th:text="#{navigation.login}"><a href="login">Login</a></li>
+            <li th:unless="${login}" th:text="#{navigation.register}"><a href="register">Register</a></li>
+            <li th:if="${login}" th:text="#{navigation.add}"><a href="add">Add</a></li> <!-- TODO: make "+" icon -->
+            <li th:if="${login}" th:text="#{navigation.setting}"><a href="setting">Setting</a></li> <!-- TODO: make "*" icon -->
+            <li th:if="${login}" th:text="#{navigation.logout}">Logout</li>
+        </ul>
+    </div>
+</footer>

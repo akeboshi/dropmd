@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+body {
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: inline;
+    padding: 20px 10px;
+    font-size: 2em;
+}
+
+#wrapper {
+    margin: 0 auto;
+    background: white;
+    min-width: 300px;
+    max-width: 90%;
+}
+
+#header {
+}
+
+#subtitle {
+    display: inline;
+    font-size: 1.3em;
+    padding-left: 10px;
+}
+
+#navigation ul {
+    float: right;
+    margin: 10px 20px 0 0;
+    padding: 0;
+}
+#navigation li {
+    display: inline;
+    padding: 10px;
+}
+
+#content {
+    padding: 0 20px;
+}
+
+#id {
+    width: 100%;
+}
+
+#footer {
+}
+
+#copyright {
+    text-align: center;
+}
