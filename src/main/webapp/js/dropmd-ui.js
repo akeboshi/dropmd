@@ -1,6 +1,6 @@
 $(function () {
     var textarea = document.getElementById('editor');
-    textarea.onkeydown = function () {
+    textarea.onkeyup = function () {
         autosize(textarea);
         document.getElementById('preview').innerHTML = marked(textarea.value);
         if (textarea.value.empty()) {
